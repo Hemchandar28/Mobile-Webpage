@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color:#9DB2BF;
+}
+
+ .containernav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
+    background-color: #fff;
+    width: 95%;
+    height:80px;
+    border-radius: 1rem;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #212A3E;
+    z-index: 9999;
+}
+
+.containernav .h1nav {
+    position: absolute;
+    top: 11px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #9DB2BF;
+}
+
+.containernav .pnav {
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #9DB2BF;
+}
+
+.containernav .navbarcontent nav ul {
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    align-items: center;
+    grid-gap: 10px;
+    list-style: none;
+}
+
+.containernav .navbarcontent nav ul li a {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    gap: 10px;
+    text-decoration: none;
+    color: #9DB2BF;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0.7rem 0;
+    white-space: nowrap;
+}
+
+.containernav .navbarcontent nav ul li a:hover {
+    background-color: #DDE6ED;
+    color: #212A3E;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out ;
+}
+
+.containernav .navbarcontent #check{
+    display: none;
+}
+
+.containernav .navbarcontent .check {
+    display: none;
+}
+
+@media screen and (max-width:955px) {
+    .containernav .navbarcontent .check{
+        display: block;
+        color: #9DB2BF;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .icon1 {
+        color: #9DB2BF;
+    }
+
+    .containernav .navbarcontent nav ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #212A3E;
+        top: 80px;
+        left: -110%;
+        transition: all .5s;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .containernav .navbarcontent nav ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: #9DB2BF;
+        position: relative;
+    }
+    .containernav .navbarcontent nav ul li a:hover {
+        background-color: #01959a;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        transition: all 0.2s ease-in-out ;
+    }
+
+    .containernav .navbarcontent nav ul li a{
+        font-size: 20px;
+    }
+
+    .containernav .navbarcontent #check:checked ~ ul{
+        left: 0;
+    }
+
+}

@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerser {
+    width: 100%;
+    height: auto;
+    background-color: #9DB2BF;
+    padding:17vh 0  0 0 ;
+}
+
+.containerser .cardser {
+    width: 94%;
+    height: auto;
+    background-color: #9DB2BF;
+    margin: 0 3%;
+    padding-bottom: 30px;
+}
+
+.containerser h5 {
+    font-size: 25px;
+    color: #212A3E;
+}
+
+.containerser h1 {
+    font-size: 50px;
+    color: #212A3E;
+}
+
+.containerser h6 {
+    font-size: 20px;
+    color: #212A3E;
+}
+
+.containerser h3 {
+    font-size: 35px;
+    color: #9DB2BF;
+}
+
+.containerser p {
+    font-size: 20px;
+    color: #9DB2BF;
+}
+
+.containerser .contentser {
+    margin: 5%;
+}
+
+.containerser .contentser .content1ser {
+    background-color: #212A3E;
+}
+
+.containerser .titleser {
+    text-align: center;
+}
+
+.containerser .content1ser .imgser {
+    height: 300px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.containerser .content1ser {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: lightyellow;
+    border-radius: 20px;
+    gap: 5%;
+    margin: 20px;
+}
+
+@media screen and (max-width:900px) {
+    .containerser .content1ser {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerser .cardser {
+        width: 94%;
+        height: auto;
+        background-color: #9DB2BF;
+        margin: 9% 3%;
+        padding-bottom: 30px;
+    }
+}

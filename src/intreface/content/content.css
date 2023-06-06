@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contentcontainer {
+    text-align: center;
+    background-color:#9DB2BF;
+    width: 100%;
+    position: relative;
+    top: 120px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+.contentcontainer .categories {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 60px;
+    padding-top: 30px;
+}
+
+.contentcontainer .contentcard {
+    height: 400px;
+    width: 300px;
+    padding-top: 30px;
+    margin: 10% 0;
+    background-color: #212A3E;
+    box-shadow: 3px 3px 40px black;
+    border-radius: 20px;
+}
+
+.contentcontainer .contentcard .image {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+.contentcontainer .contentcard .image img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+    object-fit:fill;
+}
+
+.contentcontainer .contentcard .image:hover img {
+    transform: scale(1.3);
+}
+
+.contentcontainer .h1content {
+    color:#212A3E;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.h2content a{
+    text-decoration: none;
+    color: #9DB2BF;
+    font-size: 25px;
+}
+
+.contentcontainer .h2content {
+    padding-top: 20px;
+}
+
+.contentcontainer .h2content a {
+    font-size: 25px;
+}
+
+.contentcontainer .h2content a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:950px) {
+    .contentcontainer .categories {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: space-evenly
+    }   
+}
+
+@media screen and (max-width:600px) {
+    .contentcontainer .categories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 40px;
+    }   
+}

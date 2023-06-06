@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerc {
+    height: auto;
+    width: 100%;
+    background-color: #9DB2BF;
+    padding:20vh 0 0 0;
+}
+
+.containerc .cardc {
+    height: 100vh;
+    width: 94%;
+    margin: 0 3%;
+    background-color: #9DB2BF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+
+.containerc .column1c {
+    height: auto;
+    width: 66%;
+    background-color: #212A3E;
+    padding: 20px;
+}
+
+.containerc .column1c h2 {
+    font-size: 32px;
+    color: #9DB2BF;
+}
+
+.column1-1c {
+    display: grid;
+    margin-top: 1%;
+    grid-template-columns: auto auto;
+}
+
+.containerc .column1c h4 {
+    font-size: 22px;
+    color: #9DB2BF;
+}
+
+.containerc .column2c h5 {
+    font-size: 20px;
+    color: #9DB2BF;
+}
+
+.containerc .col1-1c {
+    margin-top: 1%;
+}
+
+.containerc .col1-1c input {
+    height: 40px;
+    width: 80%;
+    outline: none;
+    padding-left: 5px;
+}
+ 
+.containerc .col1-2c {
+    margin-top: 1%;
+}
+
+.containerc .col1-2c textarea{
+    height: 160px;
+    width: 90%;
+    outline: none;
+    padding-left: 5px;
+}
+
+::placeholder {
+    font-size: 17px;
+}
+
+.containerc .buttonc {
+    margin-top: 4%;
+    height: 40px;
+    width: 90px;
+    background-color:#9DB2BF;;
+    color: #212A3E;
+    font-weight: 600;
+}
+
+.containerc .buttonc:hover {
+    color: #212A3E;
+    background-color: whitesmoke;
+}
+
+.containerc .column2c {
+    height: 100vh;
+    width: 33%;
+    gap: 2vh;
+}
+
+.containerc .row1c {
+    height: auto;
+    width: 100%;
+    background-color: #212A3E;
+    padding: 20px;
+}
+
+.containerc .row2c {
+    height: 50vh;
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.containerc .row1c .socialc ul {
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.column2c .row1c h2 {
+    color: #9DB2BF;
+}
+
+.containerc .row1c .h5 span {
+    padding-right: 10px;
+    font-size: 22px;
+    color: #9DB2BF;
+}
+
+.containerc .row1c .h5 {
+    cursor: pointer;
+    color: #9DB2BF;
+}
+
+.containerc .row1c .socialc ul li a {
+    text-decoration: none;
+    color: #9DB2BF;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.containerc .row1c .socialc ul li a:hover {
+    color:whitesmoke;
+    transition: 0.3s ease-in-out;
+}
+
+.containerc .imagec {
+    height: 40vh;
+    width: 100%;
+}
+
+@media screen and (max-width:850px) {
+    .containerc {
+        height: auto;
+        width: 100%;
+        padding: 25vh 0 0 0;
+    }
+
+    .containerc .cardc {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 97%;
+    }
+
+    .containerc .column1c {
+        width: 90%;
+    }
+
+    .containerc .column2c {
+        width: 90%;
+        padding-top: 10px;
+    }
+
+    .containerc .row1c {
+        height: auto;
+    }
+}
